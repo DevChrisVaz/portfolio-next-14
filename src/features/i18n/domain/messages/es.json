@@ -1,11 +1,12 @@
 {
     "Navbar": {
-        "work": "Trabajos",
+        "home": "Inicio",
         "services": "Servicios",
         "about": "Acerca de",
         "career": "Carrera",
         "blog": "Blog",
-        "language": "Idioma"
+        "language": "Idioma",
+        "contact": "Contacto"
     },
     "Hero": {
         "degree": "Ingeniero de Software"
@@ -26,6 +27,68 @@
         "api": {
             "title": "APIs Web",
             "description": "Hábil en el diseño e implementación API web eficientes."
+        }
+    },
+    "Projects": {
+        "Card": {
+            "live": "Ver live",
+            "details": "Ver detalles",
+            "code": "Ver código"
+        },
+        "Facturandote": {
+            "type": "Landing Page",
+            "name": "Facturándote",
+            "shortDescription": "Landing page para empresa de facturación"
+        },
+        "GymbroLanding": {
+            "type": "Landing Page",
+            "name": "GYMBRO Landing",
+            "shortDescription": "Landing page para proyecto de plataforma de gimnasios"
+        },
+        "GymbroAdmin": {
+            "type": "App Web",
+            "name": "GYMBRO Admin",
+            "shortDescription": "Aplicación web para administración de los gimnasios registrados"
+        },
+        "GymbroApp": {
+            "type": "App Móvil",
+            "name": "GYMBRO App",
+            "shortDescription": "Aplicación móvil para visualización de gimnasios y administración de suscripciones"
+        },
+        "GymbroApi": {
+            "type": "API Web",
+            "name": "GYMBRO API",
+            "shortDescription": "API para consumo de panel administrativo y aplicación móvil"
+        },
+        "PreNota": {
+            "type": "App Móvil",
+            "name": "PreNota",
+            "shortDescription": "Complemento para punto de venta"
+        },
+        "Trompos": {
+            "type": "App Web",
+            "name": "Trompos",
+            "shortDescription": "Frontend de ecommerce para restaurante"
+        },
+        "DeleiteFront": {
+            "type": "App Web",
+            "name": "Deleite Ecommerce",
+            "shortDescription": "Frontend de ecommerce para repostería"
+        },
+        "DeleiteAdmin": {
+            "type": "App Web",
+            "name": "Deleite Admin",
+            "shortDescription": "Panel administrativo para gestión de productos y pedidos de tienda en línea para repostería"
+        },
+        "DeleiteApi": {
+            "type": "API Web",
+            "name": "Deleite API",
+            "shortDescription": "API para consumo de panel administrativo y tienda en línea para repostería"
+        },
+        "ColegioMerida": {
+            "type": "Landing Page",
+            "name": "Colegio Mérida",
+            "shortDescription": "Landing page para escuela de mujeres"
         }
     },
     "Career": {
@@ -76,5 +139,15 @@
                 }
             }
         }
+    },
+    "Contact": {
+        "Heading": "Contacto",
+        "location": "Ubicación",
+        "contact": {
+            "heading": "Contacto",
+            "email": "Correo",
+            "phone": "Celular"
+        },
+        "socialMedia": "Redes Sociales"
     }
 }

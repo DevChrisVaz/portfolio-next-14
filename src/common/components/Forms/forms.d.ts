@@ -1,4 +1,6 @@
-type FormProps = {
+import { SelectSize } from "./select/enum";
+
+export type FormProps = {
     label: string,
     type?: string,
     name?: string,
@@ -10,7 +12,7 @@ type FormProps = {
     info?: string;
 }
 
-type SelectProps = Omit<FormProps, "type" | "value" | "error"> & {
+export type SelectProps = Omit<FormProps, "type" | "value" | "error"> & {
     id?: string | undefined;
     options: {
         name: string;
@@ -19,17 +21,18 @@ type SelectProps = Omit<FormProps, "type" | "value" | "error"> & {
     error?: string | string[];
     multiple?: boolean;
     defaultValue?: string | number | string[];
+    size?: SelectSize
 }
 
-type InputNumberProps = Omit<FormProps, "type" | "value" | "prefixIcon"> & {
+export type InputNumberProps = Omit<FormProps, "type" | "value" | "prefixIcon"> & {
     value?: number;
 }
 
-type TextAreaProps = Omit<FormProps, "type"> & {
+export type TextAreaProps = Omit<FormProps, "type"> & {
     rows?: number
 }
 
-type CheckProps = Omit<FormProps, "type" | "label"> & {
+export type CheckProps = Omit<FormProps, "type" | "label"> & {
     options: {
         name: string;
         value: string | number;

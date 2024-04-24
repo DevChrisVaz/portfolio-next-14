@@ -2,11 +2,11 @@
 
 import { useTranslations } from 'next-intl';
 import React, { useEffect, useState } from 'react';
-import LocaleSelect from '@/features/presentation/components/LocaleSelect';
 import Link from 'next/link';
 import LinkButton from '../Buttons/LinkButton';
 import { ButtonSize } from '../Buttons/enums';
 import { usePathname } from 'next/navigation';
+import LocaleSelect from '@/features/i18n/presentation/components/LocaleSelect';
 
 type Props = {}
 
@@ -64,9 +64,9 @@ const Navbar: React.FC<Props> = (_) => {
                     <img className="h-[52px]" src="/images/logo/full-logo.svg" alt="DevChrisVaz" />
                 </div>
 
-                <div className="flex items-center gap-x-2 ms-auto py-1 md:ps-6 md:order-3 md:col-span-3">
+                <div className="flex items-center gap-x-2 ms-auto py-2 md:ps-6 md:order-3 md:col-span-3">
                     <LocaleSelect />
-                    <LinkButton to="/" size={ButtonSize.md}>Contact me</LinkButton>
+                    <LinkButton to="/contact" size={ButtonSize.md}>{t("contact")}</LinkButton>
 
                     <div className="md:hidden">
                         <button type="button" onClick={() => setIsOpen(!isOpen)} className="hs-collapse-toggle size-[38px] flex justify-center items-center text-sm font-semibold rounded-xl border border-gray-200 text-black hover:bg-gray-100 disabled:opacity-50 disabled:pointer-events-none dark:text-white dark:border-neutral-700 dark:hover:bg-neutral-700" data-hs-collapse="#navbar-collapse-with-animation" aria-controls="navbar-collapse-with-animation" aria-label="Toggle navigation">
@@ -86,7 +86,7 @@ const Navbar: React.FC<Props> = (_) => {
                 <div className={`${isOpen ? "block" : "hidden"} overflow-hidden transition-all duration-300 basis-full grow md:block md:w-auto md:basis-auto md:order-2 md:col-span-6`}>
                     <div className="flex flex-col gap-y-4 gap-x-0 mt-5 md:flex-row md:justify-center md:items-center md:gap-y-0 md:gap-x-7 md:mt-0">
                         <div>
-                            <NavLink to="/">{t("work")}</NavLink>
+                            <NavLink to="/">{t("home")}</NavLink>
                         </div>
                         <div>
                             <NavLink to="/career">{t("career")}</NavLink>

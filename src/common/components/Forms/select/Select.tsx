@@ -2,6 +2,8 @@
 
 import { AnimatePresence, motion } from 'framer-motion';
 import React, { useEffect, useRef, useState } from 'react';
+import { setSize } from './variants';
+import { SelectProps } from '../forms';
 
 const Select: React.FC<SelectProps> = (props) => {
     const [isOpen, setIsOpen] = useState(false);
@@ -71,7 +73,7 @@ const Select: React.FC<SelectProps> = (props) => {
                         ))
                     }
                 </select>
-                <button type="button" onClick={toggleOptions} className="relative py-3 px-4 pe-9 flex text-nowrap w-full cursor-pointer bg-white border-3 border-gray-200 rounded-xl text-start text-sm focus:border-primary focus:ring-primary before:absolute before:inset-0 before:z-[1] dark:bg-slate-900 dark:border-gray-700 dark:text-gray-400 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600"><span className="truncate">{selectedOption ?? props.label}</span></button>
+                <button type="button" onClick={toggleOptions} className={`relative pe-9 ${setSize(props.size)} flex text-nowrap w-full cursor-pointer bg-white border-3 border-gray-200 rounded-xl text-start text-sm focus:border-primary focus:ring-primary before:absolute before:inset-0 before:z-[1] dark:bg-slate-900 dark:border-gray-700 dark:text-gray-400 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600`}><span className="truncate">{selectedOption ?? props.label}</span></button>
                 <AnimatePresence initial={false}>
                     {isOpen &&
                         <motion.div
@@ -82,7 +84,7 @@ const Select: React.FC<SelectProps> = (props) => {
                         >
                             <div className="select-content absolute mt-2 z-50 w-full max-h-72 p-1 space-y-0.5 bg-white border border-gray-200 rounded-xl overflow-hidden overflow-y-auto dark:bg-slate-900 dark:border-gray-700 top-full">
                                 {props.options.map((option, index) => (
-                                    <button type='button' onClick={() => { handleOptionClick(index) }} key={index} tabIndex={index} className="select-content cursor-pointer py-2 px-4 w-full text-sm text-gray-800 hover:bg-gray-100 rounded-lg focus:outline-none focus:bg-gray-100 dark:bg-slate-900 dark:hover:bg-slate-800 dark:text-gray-200 dark:focus:bg-slate-800 selected"><div className="flex justify-between items-center w-full"><span>{option.name}</span><span className={!(selectedOption === option.name) ? "hidden" : "block"}><svg className="flex-shrink-0 size-3.5 text-tertiary-600 dark:text-tertiary-500" xmlns="http:.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg></span></div></button>
+                                    <button type='button' onClick={() => { handleOptionClick(index) }} key={index} tabIndex={index} className="select-content cursor-pointer py-2 px-4 w-full text-sm text-gray-800 hover:bg-gray-100 rounded-lg focus:outline-none focus:bg-gray-100 dark:bg-slate-900 dark:hover:bg-slate-800 dark:text-gray-200 dark:focus:bg-slate-800 selected"><div className="flex justify-between items-center w-full"><span>{option.name}</span>&nbsp;<span className={!(selectedOption === option.name) ? "hidden" : "block"}><svg className="flex-shrink-0 size-3.5 text-tertiary-600 dark:text-tertiary-500" xmlns="http:.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg></span></div></button>
                                 ))}
                             </div>
                         </motion.div>

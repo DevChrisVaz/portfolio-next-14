@@ -2,8 +2,8 @@
 
 import React from 'react';
 import { FaReact } from "react-icons/fa";
-import { FaBootstrap, FaCss3, FaDocker, FaHtml5, FaNodeJs } from 'react-icons/fa6';
-import { SiDotnet, SiFlutter, SiGraphql, SiJavascript, SiMicrosoftsqlserver, SiMongodb, SiMysql, SiNestjs, SiNextdotjs, SiPostgresql, SiTailwindcss, SiTypescript } from 'react-icons/si';
+import { FaBootstrap, FaCss3, FaDocker, FaHtml5, FaLinux, FaNodeJs } from 'react-icons/fa6';
+import { SiDotnet, SiFlutter, SiGraphql, SiJavascript, SiMicrosoftsqlserver, SiMongodb, SiMysql, SiNestjs, SiNextdotjs, SiPostgresql, SiRedis, SiTailwindcss, SiTypescript } from 'react-icons/si';
 import Slider from 'react-slick';
 
 type Props = {}
@@ -83,6 +83,8 @@ const Tecnologies: React.FC<Props> = (_) => {
                 <TecnologyCard icon={<SiJavascript className="text-white text-[32px]" />} name="Javascript" />
                 <TecnologyCard icon={<SiTypescript className="text-white text-[32px]" />} name="Typescript" />
                 <TecnologyCard icon={<SiGraphql className="text-white text-[32px]" />} name="GraphQL" />
+                <TecnologyCard icon={<SiRedis className="text-white text-[32px]" />} name="Redis" />
+                <TecnologyCard icon={<FaLinux className="text-white text-[32px]" />} name="Linux" />
             </Slider>
         </div>
     );

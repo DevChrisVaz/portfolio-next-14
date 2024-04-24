@@ -2,6 +2,7 @@
 
 import { AnimatePresence, motion } from 'framer-motion';
 import React, { useEffect, useRef, useState } from 'react';
+import { SelectProps } from '../forms';
 
 const SelectMultiple: React.FC<SelectProps> = (props) => {
     const [isOpen, setIsOpen] = useState(false);

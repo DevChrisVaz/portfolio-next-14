@@ -1,6 +1,7 @@
 import { handleNumericInputKeyDown } from '@/common/utils/input_formatters/numeric_input';
 import { useFormikContext } from 'formik';
 import React, { useRef } from 'react';
+import { InputNumberProps } from './forms';
 
 const InputNumber: React.FC<InputNumberProps> = (props) => {
 

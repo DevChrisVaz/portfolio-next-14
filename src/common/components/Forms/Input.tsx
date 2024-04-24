@@ -1,6 +1,7 @@
 "use client"
 
 import React, { ChangeEvent, useEffect, useState } from 'react';
+import { FormProps } from './forms';
 
 const Input: React.FC<FormProps> = (props) => {
     const [inputValue, setInputValue] = useState(props.value);

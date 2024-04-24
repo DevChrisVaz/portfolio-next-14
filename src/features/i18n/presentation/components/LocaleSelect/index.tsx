@@ -1,6 +1,7 @@
 "use client"
 
 import Select from '@/common/components/Forms/select/Select';
+import { SelectSize } from '@/common/components/Forms/select/enum';
 import { locales } from '@/features/i18n/domain/constants/locales';
 import { useLocale, useTranslations } from 'next-intl';
 import { usePathname, useRouter } from 'next/navigation';
@@ -25,7 +26,7 @@ const LocaleSelect: React.FC<Props> = (_) => {
     };
 
     return (
-        <Select label={t("language")} defaultValue={localActive} onChange={onSelectChange} options={locales.map(l => ({ name: l.lable, value: l.key }))} />
+        <Select label={t("language")} size={SelectSize.md} defaultValue={localActive} onChange={onSelectChange} options={locales.map(l => ({ name: l.lable, value: l.key }))} />
     );
 }
 

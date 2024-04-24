@@ -1,18 +1,19 @@
 {
     "Navbar": {
-        "work": "Work",
+        "home": "Home",
         "services": "Services",
         "about": "About",
         "career": "Career",
         "blog": "Blog",
-        "language": "Language"
+        "language": "Language",
+        "contact": "Contact"
     },
     "Hero": {
         "degree": "Software Engineer"
     },
     "IconSection": {
         "mobile": {
-            "title": "Apps Móviles",
+            "title": "Mobile Apps",
             "description": "Experience in Android and IOS applications"
         },
         "landing": {
@@ -26,6 +27,68 @@
         "api": {
             "title": "Web APIs",
             "description": "Skilled in designing and implementing efficient web APIs"
+        }
+    },
+    "Projects": {
+        "Card": {
+            "live": "View live",
+            "details": "View details",
+            "code": "View code"
+        },
+        "Facturandote": {
+            "type": "Landing Page",
+            "name": "Facturándote",
+            "shortDescription": "Landing page for a billing company"
+        },
+        "GymbroLanding": {
+            "type": "Landing Page",
+            "name": "GYMBRO Landing",
+            "shortDescription": "Landing page for a gym platform project"
+        },
+        "GymbroAdmin": {
+            "type": "Web App",
+            "name": "GYMBRO Admin",
+            "shortDescription": "Web application for managing registered gyms"
+        },
+        "GymbroApp": {
+            "type": "Mobile App",
+            "name": "GYMBRO App",
+            "shortDescription": "Mobile application for finding gyms and subscriptions management"
+        },
+        "GymbroApi": {
+            "type": "Web API",
+            "name": "GYMBRO API",
+            "shortDescription": "API for consumption by administrative panel and mobile application"
+        },
+        "PreNota": {
+            "type": "Mobile App",
+            "name": "PreNota",
+            "shortDescription": "Point-of-sale complement"
+        },
+        "Trompos": {
+            "type": "Web App",
+            "name": "Trompos",
+            "shortDescription": "Frontend de ecommerce para restaurante"
+        },
+        "DeleiteFront": {
+            "type": "Web App",
+            "name": "Deleite Ecommerce",
+            "shortDescription": "E-commerce frontend for restaurants"
+        },
+        "DeleiteAdmin": {
+            "type": "Web App",
+            "name": "Deleite Admin",
+            "shortDescription": "Administrative panel for managing products and orders of an online bakery store"
+        },
+        "DeleiteApi": {
+            "type": "Web API",
+            "name": "Deleite API",
+            "shortDescription": "API for consumption by administrative panel and online bakery store"
+        },
+        "ColegioMerida": {
+            "type": "Landing Page",
+            "name": "Colegio Mérida",
+            "shortDescription": "Womens' School Landing Page"
         }
     },
     "Career": {
@@ -43,7 +106,7 @@
         "WorkExperience": {
             "Heading": "Work experience",
             "Work1": {
-                "job": "Desarrollador de Software FullStack",
+                "job": "FullStack Software Developer",
                 "enterprise": "Soluciones América del Sureste de C.V.",
                 "activities": {
                     "activity1": "Development of a landing page for an invoicing company with the option to purchase invoice folios in packages. This was build in NodeJS and ReactJS.",
@@ -52,7 +115,7 @@
                 }
             },
             "Work2": {
-                "job": "Desarrollador de Software FullStack",
+                "job": "FullStack Software Developer",
                 "enterprise": "TIC Consultores",
                 "activities": {
                     "activity1": "An upgrade was made to a lottery ticket sales application to allow the cashier to capture multiple draws at once for the same customer. This was done in ReactJS, Laravel and MySQL.",
@@ -76,5 +139,15 @@
                 }
             }
         }
+    },
+    "Contact": {
+        "Heading": "Contact",
+        "location": "Location",
+        "contact": {
+            "heading": "Contact",
+            "email": "Email",
+            "phone": "Phone"
+        },
+        "socialMedia": "Social Media"
     }
 }

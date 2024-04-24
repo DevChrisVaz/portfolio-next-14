@@ -3,6 +3,7 @@
 import { useFormikContext } from 'formik';
 
 import React from 'react';
+import { CheckProps } from './forms';
 
 const InputCheck: React.FC<CheckProps> = (props) => {
 

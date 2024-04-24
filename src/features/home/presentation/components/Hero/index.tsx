@@ -1,5 +1,6 @@
 import { useTranslations } from 'next-intl';
 import React from 'react'
+import Reveal from '../../../../../common/components/Animations/Reveal';
 
 type Props = {}
 
@@ -11,8 +12,8 @@ const Hero: React.FC<Props> = (_) => {
         <div className="max-w-[85rem] mx-auto px-4 sm:px-6 lg:px-8 mb-16">
             <div className="grid lg:grid-cols-8 lg:gap-x-8 xl:gap-x-12 lg:items-center">
                 <div className="lg:col-span-4">
-                    <h1 className="block text-3xl font-bold text-gray-800 sm:text-4xl md:text-5xl lg:text-6xl dark:text-white">Christian Alexander Vázquez González</h1>
-                    <p className="mt-3 text-lg text-gray-800 dark:text-neutral-400">{t("degree")}</p>
+                    <Reveal><h1 className="block text-3xl font-bold text-gray-800 sm:text-4xl md:text-5xl lg:text-6xl dark:text-white">Christian Alexander Vázquez González</h1></Reveal>
+                    <Reveal><p className="mt-3 text-lg text-gray-800 dark:text-neutral-400">{t("degree")}</p></Reveal>
 
                     {/* <div className="mt-5 lg:mt-8 flex flex-col items-center gap-2 sm:flex-row sm:gap-3">
                         <div className="w-full sm:w-auto">
