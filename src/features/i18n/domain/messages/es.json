@@ -1,0 +1,80 @@
+{
+    "Navbar": {
+        "work": "Trabajos",
+        "services": "Servicios",
+        "about": "Acerca de",
+        "career": "Carrera",
+        "blog": "Blog",
+        "language": "Idioma"
+    },
+    "Hero": {
+        "degree": "Ingeniero de Software"
+    },
+    "IconSection": {
+        "mobile": {
+            "title": "Apps Móviles",
+            "description": "Experiencia en aplicaciones Android y IOS"
+        },
+        "landing": {
+            "title": "Landing Pages",
+            "description": "Experto en crear experiencias atractivas en landing pages"
+        },
+        "web": {
+            "title": "Apps Web",
+            "description": "Experto en crear soluciones de aplicaciones web fluidas"
+        },
+        "api": {
+            "title": "APIs Web",
+            "description": "Hábil en el diseño e implementación API web eficientes."
+        }
+    },
+    "Career": {
+        "Education": {
+            "Heading": "Educación",
+            "University": {
+                "name": "Universidad Tecnológica Metropolitana",
+                "degree": "Ingeniería en Desarrollo y Gestión de Software"
+            },
+            "Highschool": {
+                "name": "Colegio Nacional de Educación Profesional Técnica",
+                "degree": "Técnico en informática"
+            }
+        },
+        "WorkExperience": {
+            "Heading": "Puestos anteriores",
+            "Work1": {
+                "job": "Desarrollador de Software FullStack",
+                "enterprise": "Soluciones América del Sureste de C.V.",
+                "activities": {
+                    "activity1": "Desarrollo de una landing page para una empresa de facturación con la opción de comprar folios de facturas en paquetes. Este proyecto se construyó en NodeJS y ReactJS.",
+                    "activity2": "Desarrollo del panel administrativo web para una aplicación de enfermería que permite registrar categorías, servicios, productos, y aceptar y ver solicitudes de enfermería a domicilio. Esto se construyó en ReactJS.",
+                    "activity3": "Desarrollo de una plataforma de comercio electrónico para la venta de teléfonos inteligentes y accesorios para una empresa afiliada a Telcel. Esto se construyó en ReactJS, NodeJS, MongoDB y GraphQL."
+                }
+            },
+            "Work2": {
+                "job": "Desarrollador de Software FullStack",
+                "enterprise": "TIC Consultores",
+                "activities": {
+                    "activity1": "Se realizó una actualización a una aplicación de venta de boletos de lotería para permitir que el cajero capture múltiples sorteos a la vez para el mismo cliente. Esto se hizo en ReactJS, Laravel y MySQL.",
+                    "activity2": "Se añadió un nuevo módulo al ERP de una empresa de autobuses que permite capturar el saldo adeudado por los conductores por el total de boletos asignados a su ruta. Esto se realizó en NextJS, Net Framework y SQLServer.",
+                    "activity3": "Se realizaron múltiples correcciones a una aplicación de gestión de eventos estudiantiles y escolares. Esto se hizo en Django y PostgreSQL.",
+                    "activity4": "Desarrollo de una aplicación móvil para ventas en tienda mediante PDAs que permite escanear códigos de barras para encontrar productos, buscar productos por descripción, elegir variantes de productos y recuperar su precio por variante, generar múltiples carritos de compra a la vez, finalizar el pedido, ver los pedidos del usuario e imprimir tickets vía Wi-Fi en una impresora térmica. Esto se realizó en Flutter, Net Framework y SQLServer.",
+                    "activity5": "Desarrollo de la parte web de un comercio electrónico de un restaurante. Actualmente se está desarrollando utilizando NextJS y Typescript."
+                }
+            }
+        },
+        "LeadershipsAndActivities": {
+            "Heading": "Liderazgo y Actividades",
+            "activities": {
+                "activity1": "Desarrollo de una plataforma de comercio electrónico de postres para un cliente, que consta de un sitio web donde se pueden ver y filtrar productos, ver detalles de productos y productos relacionados, generar un carrito y finalizar pedidos (sin un método de pago). Además, se creó un panel administrativo donde se pueden gestionar usuarios, categorías de productos, productos y solicitudes de pedidos.",
+                "activity2": {
+                    "description": "Desarrollo de una plataforma (tarea en segundo plano) que consta de 2 partes:",
+                    "subActivities": {
+                        "subActivity1": "La primera parte implica el registro de gimnasios, sus instalaciones e imágenes, sus membresías o planes de suscripción, control de acceso a su panel administrativo, validación de suscripciones de clientes a través de códigos QR (control de acceso), entre otras funciones en desarrollo. Esta parte se desarrolló en ReactJS utilizando Vite.",
+                        "subActivity2": "La segunda parte consiste en una aplicación móvil para el registro de clientes y visualización de la información de los gimnasios mencionados anteriormente, suscripción a un plan y generación de un código QR para acceder a las instalaciones, entre otras funciones aún en desarrollo. Esto se realizó en Flutter. La API del proyecto se está desarrollando en NestJS y utilizando MongoDB como base de datos. Además de esto, se está desarrollando una landing page para el registro de gimnasios para su posterior aprobación e ingreso a la plataforma, esta última se está desarrollando en NextJS."
+                    }
+                }
+            }
+        }
+    }
+}

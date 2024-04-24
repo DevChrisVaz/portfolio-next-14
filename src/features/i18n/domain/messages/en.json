@@ -1,0 +1,80 @@
+{
+    "Navbar": {
+        "work": "Work",
+        "services": "Services",
+        "about": "About",
+        "career": "Career",
+        "blog": "Blog",
+        "language": "Language"
+    },
+    "Hero": {
+        "degree": "Software Engineer"
+    },
+    "IconSection": {
+        "mobile": {
+            "title": "Apps Móviles",
+            "description": "Experience in Android and IOS applications"
+        },
+        "landing": {
+            "title": "Landing Pages",
+            "description": "Skilled in creating engaging landing page experiences"
+        },
+        "web": {
+            "title": "Web Apps",
+            "description": "Experienced in crafting seamless web app solutions"
+        },
+        "api": {
+            "title": "Web APIs",
+            "description": "Skilled in designing and implementing efficient web APIs"
+        }
+    },
+    "Career": {
+        "Education": {
+            "Heading": "Education",
+            "University": {
+                "name": "Universidad Tecnológica Metropolitana",
+                "degree": "Software Development and Management, EngineeringSoftware Development and Management, Engineering"
+            },
+            "Highschool": {
+                "name": "Colegio Nacional de Educación Profesional Técnica",
+                "degree": "Computer Technician"
+            }
+        },
+        "WorkExperience": {
+            "Heading": "Work experience",
+            "Work1": {
+                "job": "Desarrollador de Software FullStack",
+                "enterprise": "Soluciones América del Sureste de C.V.",
+                "activities": {
+                    "activity1": "Development of a landing page for an invoicing company with the option to purchase invoice folios in packages. This was build in NodeJS and ReactJS.",
+                    "activity2": "Development of the web admin panel for a nursing application that allows registering categories, services, products, and accepting and viewing requests for home nursing. This was build in ReactJS.",
+                    "activity3": "Development of an e-commerce platform for selling smartphones and accessories for a company affiliated with Telcel. This was build in ReactJS, NodeJS, MongoDB and GraphQL."
+                }
+            },
+            "Work2": {
+                "job": "Desarrollador de Software FullStack",
+                "enterprise": "TIC Consultores",
+                "activities": {
+                    "activity1": "An upgrade was made to a lottery ticket sales application to allow the cashier to capture multiple draws at once for the same customer. This was done in ReactJS, Laravel and MySQL.",
+                    "activity2": "A new module was added to a bus company's ERP that allows capturing the balance owed by drivers for the total number of tickets assigned to their route. This was done in NextJS, Net Framework and SQLServer.",
+                    "activity3": "Multiple corrections were made to a student and school event management application. This was done in Django and PostgreSQL.",
+                    "activity4": "Development of a mobile application for in-store sales through PDAs that allows scanning barcodes to find products, searching for products by description, choosing product variants and retrieving their price per variant, generating multiple shopping carts at once, finalizing the order, viewing user orders, and printing tickets via Wi-Fi to a thermal printer. This was done in Flutter, Net Framework and SQLServer.",
+                    "activity5": "Development of the web part of a restaurant's ecommerce. This is currently being developed using NextJS and Typescript."
+                }
+            }
+        },
+        "LeadershipsAndActivities": {
+            "Heading": "Leadership & Activities",
+            "activities": {
+                "activity1": "Development of a dessert e-commerce platform for a client, consisting of a website where products can be viewed and filtered, product details and related products can be seen, a cart can be generated, and orders can be finalized (without a payment method). Additionally, an administrative panel was created where users, product categories, products, and order requests can be managed.",
+                "activity2": {
+                    "description": "Development of a platform (background task) consisting of 2 parts:",
+                    "subActivities": {
+                        "subActivity1": "The first part involves gym registration, their facilities and images, their memberships or subscription plans, controlling access to their administrative panel, validating customer subscriptions through QR codes (Entrance control), among other functions in development. This part was developed in ReactJS using Vite.",
+                        "subActivity2": " The second part consists of a mobile application for customer registration and viewing the information of the aforementioned gyms, subscribing to a plan, and generating a QR code for accessing the facilities, among other functions still in development. This was done in Flutter. Theproject's API is being developed in NestJS and using MongoDB as the database. In addition to this, a landing page for gym registration for subsequent approval and entry into the platform is being developed. This is being developed in NextJS."
+                    }
+                }
+            }
+        }
+    }
+}
