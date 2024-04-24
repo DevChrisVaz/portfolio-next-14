@@ -33,7 +33,8 @@
         "Card": {
             "live": "Ver live",
             "details": "Ver detalles",
-            "code": "Ver código"
+            "code": "Ver código",
+            "technologies": "Tecnologías"
         },
         "Facturandote": {
             "type": "Landing Page",

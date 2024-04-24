@@ -16,6 +16,7 @@ type ProjectPreview = {
     name: string;
     description: string;
     image: string;
+    details?: string;
 }
 
 const ProjectPreview: React.FC<ProjectPreview> = (props) => {
@@ -39,16 +40,16 @@ const ProjectPreview: React.FC<ProjectPreview> = (props) => {
                         {props.description}
                     </p>
                 </div>
-                <div className="mt-auto flex border-t border-gray-200 divide-x divide-gray-200 dark:border-gray-700 dark:divide-gray-700">
+                {/* <div className="mt-auto flex border-t border-gray-200 divide-x divide-gray-200 dark:border-gray-700 dark:divide-gray-700">
                     {
-                        props.live ?
+                        props.details ?
+                            <Link className={`w-full py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-medium ${props.code ? "rounded-es-xl" : "rounded-b-xl"} bg-white text-gray-800 shadow-sm hover:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none dark:bg-gray-900 dark:border-gray-700 dark:text-white dark:hover:bg-gray-800`} href={"/projects/" + props.details}>
+                                {t("Card.details")}
+                            </Link>
+                            :
                             <a className={`w-full py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-medium ${props.code ? "rounded-es-xl" : "rounded-b-xl"} bg-white text-gray-800 shadow-sm hover:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none dark:bg-gray-900 dark:border-gray-700 dark:text-white dark:hover:bg-gray-800`} href={props.live} target="blank">
                                 {t("Card.live")}
                             </a>
-                            :
-                            <Link className={`w-full py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-medium ${props.code ? "rounded-es-xl" : "rounded-b-xl"} bg-white text-gray-800 shadow-sm hover:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none dark:bg-gray-900 dark:border-gray-700 dark:text-white dark:hover:bg-gray-800`} href="#">
-                                {t("Card.details")}
-                            </Link>
                     }
                     {
                         props.code && (
@@ -57,7 +58,7 @@ const ProjectPreview: React.FC<ProjectPreview> = (props) => {
                             </a>
                         )
                     }
-                </div>
+                </div> */}
             </div>
         </div>
     );
@@ -97,7 +98,7 @@ const ProjectsPreview: React.FC<Props> = (_) => {
                     }
                 ]}
             >
-                <ProjectPreview image="/images/projects/facturandote.png" live="http://www.facturandote.com" type={t("Facturandote.type")} name={t("Facturandote.name")} description={t("Facturandote.shortDescription")} />
+                <ProjectPreview image="/images/projects/facturandote.png" live="http://www.facturandote.com" type={t("Facturandote.type")} name={t("Facturandote.name")} description={t("Facturandote.shortDescription")} details={"facturandote"} />
                 <ProjectPreview image="/images/projects/gymbro-landing.png" live="https://gymbro-landing-page.vercel.app" type={t("GymbroLanding.type")} name={t("GymbroLanding.name")} description={t("GymbroLanding.shortDescription")} />
                 <ProjectPreview image="/images/projects/gymbro-dashboard.png" type={t("GymbroAdmin.type")} name={t("GymbroAdmin.name")} description={t("GymbroAdmin.shortDescription")} />
                 <ProjectPreview image="/images/projects/gymbro-landing.png" type={t("GymbroApp.type")} name={t("GymbroApp.name")} description={t("GymbroApp.shortDescription")} />
